@@ -1,0 +1,15 @@
+<!--The whole content below can be removed with the new code.-->
+<div>
+  <h3>Example of Quarter Distribution Service</h3>
+</div>
+<ul>
+  <li *ngFor="let data of someFakeValues; let i = index;">
+    <label>Quarter {{i + 1}}: </label>
+    <span>{{data.value}}</span>
+  </li>
+  <li>
+    <label>Quarter Totals</label>
+    <input id="total" type="number" value="{{totalValues}}" (keyup)="onTotalChange($event)" />
+  </li>
+</ul>
+
